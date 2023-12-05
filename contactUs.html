@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+	<link href="contactUs.css" rel="stylesheet" >
+</head>
+<body>
+	<header class="header">
+    <ul class="headerone">
+      <li class="menu__item"><a class="menu__link" href="homepage.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="ourServices.html">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="Ou">Team</a></li>
+      <li class="menu__item"><a class="menu__link" href="contactUs.html">Contact</a></li>
+    </ul>
+  </header>
+	<div class="background">
+		<div class="container">
+			<div class="screen">
+				<div class="screen-header">
+					<div class="screen-header-left">
+						<div class="screen-header-button close"></div>
+						<div class="screen-header-button maximize"></div>
+						<div class="screen-header-button minimize"></div>
+					</div>
+					<div class="screen-header-right">
+						<div class="screen-header-ellipsis"></div>
+						<div class="screen-header-ellipsis"></div>
+						<div class="screen-header-ellipsis"></div>
+					</div>
+				</div>
+				<div class="screen-body">
+					<div class="screen-body-item left">
+						<div class="app-title">
+							<span>CONTACT</span>
+							<span>US</span>
+						</div>
+						<div class="app-contact">CONTACT INFO : givefeedback@us.com</div>
+					</div>
+					<form action="mailto:givefeedback@us.com" method="post" enctype="text/plain">
+						<div class="screen-body-item">
+						<div class="app-form">
+							<div class="app-form-group">
+								<input type="text" class="app-form-control" name="name" placeholder="NAME" required>
+							</div>
+							<div class="app-form-group">
+								<input type="email" name="email" class="app-form-control" placeholder="EMAIL" required>
+							</div>
+							<div class="app-form-group">
+								<input type="text" class="app-form-control" placeholder="CONTACT NO" name="contactno" required>
+							</div>
+							<div class="app-form-group message">
+								<input class="app-form-control" placeholder="MESSAGE" required>
+							</div>
+							<div class="app-form-group buttons">
+								<button type="button" onclick="cancel()" class="app-form-button">CANCEL</button>
+								<button class="app-form-button">SEND</button>
+							</div>
+						</div>
+					</div>
+				</form>
+				<script>
+					function cancel() {
+						window.location = "homePage.html";
+					
+					}
+				</script>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-github"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menuone">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+      <li class="menu__item"><a class="menu__link" href="contactUs.html">Contact</a></li>
+    </ul>
+    <p>&copy;ENCOS | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

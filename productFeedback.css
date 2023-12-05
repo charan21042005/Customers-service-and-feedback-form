@@ -1,0 +1,276 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgb(130, 106, 251);
+}
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(130, 106, 251);
+}
+.form button:hover {
+  background: rgb(88, 56, 250);
+}
+
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+@keyframes updown {
+  0%   {top: 110%;}
+50%  {top: 0;}
+ 100%  {top: 110%;}
+}
+
+@keyframes leftright {
+  0%   {left: 0;}
+50%  {left: 80%;}
+ 100%  {left: 0;}
+}
+
+@keyframes vastag {
+  0%   {width: 8vh;}
+50%  {width: 32vh;}
+ 100%  {width: 8vh;}
+}
+
+@keyframes forog {
+100% {transform: rotate(360deg);}
+}
+
+
+body {
+background: radial-gradient(#500, #000);
+margin: 0;
+}
+body::after {
+content: ' ';
+display: block;
+position: absolute;
+background: linear-gradient(rgba(255,255,255,.6), rgba(128,128,255,.3));
+width: 4vh;
+height: 70vh;
+margin-left: -17vh;
+left: 50%;
+bottom: 20vh;
+z-index: 2;
+border-radius: 1vh 1vh 2vh 2vh;
+filter: blur(.5vh);
+transform: skewX(-2deg);
+}
+
+#lamp {
+width: 40vh;
+height: 100vh;
+margin: 0 auto;
+}
+#top, #bottom {
+background: #888;
+background: linear-gradient(111deg, #111 0%, #ccc 45%, #ccc 50%, #888 60%, #111);
+}
+#top {
+height: 7vh;
+width: 36vh;
+position: relative;
+top: .5vh;
+left: 2vh;
+border-radius: 12vh 12vh 1vh 1vh/66% 66% 2vh 2vh;
+box-shadow:
+  0 4vh 16vh 16vh rgba(0,0,0,.5),
+  0 1vh 4vh 4vh rgba(0,0,0,.3),
+  inset 0 .5vh .5vh rgba(255,255,255,.5),
+  inset 0 -.3vh .5vh rgba(128,0,0,.5);
+z-index: 2;
+}
+#top::after {
+content: ' ';
+display: block;
+position: absolute;
+background: #fff;
+width: 30vh;
+height: 3vh;
+margin-left: -15vh;
+left: 50%;
+bottom: 4vh;
+z-index: 2;
+border-radius: 48%;
+filter: blur(2vh);
+}
+#bottom {
+height: 3vh;
+border-radius: 1vh;
+box-shadow: 
+  inset 0 -.5vh .5vh rgba(0,0,0,.5),
+  inset 0 .5vh .5vh rgba(128,0,0,.5);
+}
+#bottom::after {
+content: ' ';
+display: block;
+position: absolute;
+background: yellow;
+width: 30vh;
+height: 4vh;
+margin-left: -15vh;
+left: 50%;
+bottom: 5vh;
+z-index: 2;
+border-radius: 48%;
+filter: blur(3vh);
+}
+#glass {
+overflow: hidden;
+width: 100%;
+height: 90vh;
+position: relative;
+top: -4vh;
+transform: perspective(100vh) rotateX(12deg);
+filter: contrast(22);
+background: linear-gradient(blue 30%, #60a 80%, #a06 100%);
+box-shadow: inset 0 -5vh 1vh 1vh rgba(255,0,0,.6), 0 0 2.5px .2px #808;
+border-radius: 1vh 1vh 5vh 5vh/20%;
+}
+.bubble {
+height: 16vh;
+border-radius: 40%;
+background: red;
+position: absolute;
+filter: blur(4vh);
+animation: updown linear 37s infinite,
+  leftright ease-in-out 23s infinite,
+  vastag linear 29s infinite,
+  forog linear 31s infinite;
+}
+.bubble:nth-child(2) {
+animation: updown ease-in 41s infinite,
+  leftright ease-in-out 47s infinite,
+  vastag linear 23s infinite,
+  forog linear 29s infinite;
+}
+.bubble:nth-child(3) {
+animation: updown ease-out 43s infinite,
+  leftright ease-in-out 53s infinite,
+  vastag linear 29s infinite,
+  forog linear 31s infinite;
+}
+.bubble:nth-child(4) {
+animation: updown ease-in-out 47s infinite,
+  leftright ease-in-out 59s infinite,
+  vastag linear 31s infinite,
+  forog linear 41s infinite;
+}
+.bubble:nth-child(5) {
+animation: updown ease-in-out 29s infinite,
+  leftright ease-in-out 31s infinite,
+  vastag linear 37s infinite,
+  forog linear 47s infinite;
+}
+.bubble:last-child {
+animation: updown linear 53s infinite,
+  leftright ease-in-out 29s infinite,
+  vastag linear 19s infinite,
+  forog linear 37s infinite;
+}

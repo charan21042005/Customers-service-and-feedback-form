@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+    background-size:cover;
+          -webkit-animation: slidein 100s;
+          animation: slidein 100s;
+  
+          -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  
+          -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  
+          -webkit-animation-direction: alternate;
+          animation-direction: alternate;              
+  }
+  
+  @-webkit-keyframes slidein {
+  from {background-position: top; background-size:3000px; }
+  to {background-position: -100px 0px;background-size:2750px;}
+  }
+  
+  @keyframes slidein {
+  from {background-position: top;background-size:3000px; }
+  to {background-position: -100px 0px;background-size:2750px;}
+  
+  }
+
+.bg{
+    background: url(photo-1519834785169-98be25ec3f84.avif);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+    opacity: 0.7;
+    filter: brightness(75%);
+}
+.terms-box{
+    max-width: 460px;
+    background-color: rgb(83, 83, 83,0.1);
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 20px;
+    height: 400px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+.terms-text{
+    padding: 0 20px;
+    height: 400px;
+    overflow-y: auto;
+    font-size: 14;
+    font-weight: 500;
+    color: #111;
+}
+.terms-text::-webkit-scrollbar{
+    width: 2px;
+    background-color: #282828;
+}
+.terms-text::-webkit-scrollbar-thumb{
+    background-color: #f1f1f1;
+}
+.terms-text h2{
+    text-transform: uppercase;
+}
+.terms-text h4{
+    font-size: 13px;
+    text-align: center;
+    padding: 0 40px;
+}
+.terms-box h4 span{
+    color: rgb(245, 68, 68);
+    text-transform: uppercase;
+}
+.buttons{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.btn{
+    height: 50px;
+    width: calc(50% - 6px);
+    border: 0;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;
+    transition: .3s linear;
+    cursor: pointer;
+}
+.red-btn{
+    background-color: rgb(245, 68, 68);
+}
+.gray-btn{
+    background-color: #282828;
+}
+.btn:hover{
+    opacity: .6;
+}
